@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ホメタスク サポート</title>
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --card: #ffffff;
+    --text: #1c1e24;
+    --sub: #6b7080;
+    --accent: #3557c7;
+    --border: #e4e2dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171c;
+      --card: #1e2128;
+      --text: #ececf0;
+      --sub: #9ea3b3;
+      --accent: #8fa6ff;
+      --border: #2c303a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  .lead { color: var(--sub); margin: 0 0 32px; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 18px;
+  }
+  h2 { font-size: 18px; margin: 0 0 10px; }
+  h3 { font-size: 15px; margin: 18px 0 4px; }
+  p { margin: 6px 0; }
+  ul { margin: 6px 0; padding-left: 22px; }
+  a { color: var(--accent); }
+  .q { font-weight: 700; margin-top: 16px; }
+  .a { color: var(--sub); margin-top: 2px; }
+  footer { color: var(--sub); font-size: 13px; text-align: center; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>ホメタスク サポート</h1>
+  <p class="lead">褒めてくれるボタン付きの、時間軸で仕分けるToDoアプリ</p>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <p>ご不明な点、不具合のご報告、ご要望などがありましたら、下記までお気軽にご連絡ください。</p>
+    <p>メール：<a href="mailto:【ここにメールアドレスを入力】">【ここにメールアドレスを入力】</a></p>
+    <p>不具合のご報告の際は、お使いの機種名・iOSのバージョン・症状（可能であれば発生までの操作）をお知らせいただけると、原因の調査がスムーズです。</p>
+    <p>返信までにお時間をいただく場合があります。あらかじめご了承ください。</p>
+  </section>
+
+  <section>
+    <h2>よくある質問</h2>
+
+    <p class="q">Q. タスクの追加方法を教えてください。</p>
+    <p class="a">画面右下の「＋」ボタンから追加できます。「明日15時 レポート提出」のように文章で入力すると、日付や時刻を自動で読み取って期日を設定します。「毎週月曜」などの繰り返しにも対応しています。入力した文章はそのままタスク名として保存されます。</p>
+
+    <p class="q">Q. 「今日」「今週中」「来週以降」の分け方は？</p>
+    <p class="a">タスクを「いつやるか」の時間軸で3つに仕分けます。マイページの「期日で自動繰り上げ」をONにすると、期日に応じて自動で振り分けられ、週が明けると自動で繰り上がります。</p>
+
+    <p class="q">Q. 褒めてくれるボタンについて教えてください。</p>
+    <p class="a">画面左下のボタンを押すと、褒め言葉を音声と吹き出しで伝えます。タスクを完了するたびにも、自動で褒めてくれます。使うほど、累計の完了数・連続達成日数・登録中のタスクなどに合わせた褒め言葉が増えていきます。マイページの設定から、音声・吹き出し・言語（日本語／English）のON/OFFや、ボタンの表示切り替えができます。</p>
+
+    <p class="q">Q. 褒めてくれる声が機械的に聞こえます。</p>
+    <p class="a">端末に入っている標準の音声を使っているためです。iOSの「設定」→「アクセシビリティ」→「読み上げコンテンツ」→「声」から、より自然な「拡張」音声をダウンロードすると、アプリが自動で自然な声を優先して使います。</p>
+
+    <p class="q">Q. 音声が出ません。</p>
+    <p class="a">端末のマナーモードの解除、音量、マイページの「音声で褒める」設定（および「完了時に音声で褒める」設定）をご確認ください。</p>
+
+    <p class="q">Q. リマインダー通知が届きません。</p>
+    <p class="a">期日を設定したタスクで「リマインダー」をONにしてください。また、iOSの「設定」→「通知」→「ホメタスク」で通知が許可されているかご確認ください。時刻を指定しない場合は、当日の朝9:00に通知します。</p>
+
+    <p class="q">Q. ロック画面に表示するには？</p>
+    <p class="a">マイページの「ロック画面に表示する」に手順を掲載しています。アプリを開く／閉じるたびに最新のタスク画像を写真アプリに保存し、iOSの「ショートカット」アプリのオートメーションでロック画面の壁紙に設定する方式です。</p>
+
+    <p class="q">Q. データはどこに保存されますか？ 機種変更のときは？</p>
+    <p class="a">タスクのデータは、お使いの端末の中にのみ保存されます。アカウント登録は不要で、データが開発者のサーバーに送信されることはありません。そのため、アプリを削除するとデータも削除されます。機種変更時のデータ引き継ぎ機能は現時点ではありません。</p>
+
+    <p class="q">Q. 料金はかかりますか？</p>
+    <p class="a">アプリは無料でご利用いただけます。</p>
+  </section>
+
+  <section>
+    <h2>関連ページ</h2>
+    <ul>
+      <li><a href="privacy.html">プライバシーポリシー</a></li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Tatsuya Suzuki</footer>
+</div>
+</body>
+</html>
